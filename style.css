@@ -248,11 +248,11 @@ body{
 /* FRAME */
 
 .hero-frame{
-  width:92%;
+  width:min(92%, 390px);
 
   position:absolute;
 
-  top:-10vh;
+  top:-4vh;
   left:50%;
 
   transform:translateX(-50%);
@@ -261,20 +261,20 @@ body{
 /* CONTENT */
 
 .hero-content{
-  width:60%;
+  width:min(78%, 320px);
 
   position:relative;
   z-index:2;
 
   margin:auto;
 
-  padding-top:20vh;
+  padding-top:27vh;
 
   text-align:center;
 
   display:flex;
   flex-direction:column;
-  gap:2vh;
+  gap:1.6vh;
 }
 
 .arabic{
@@ -312,7 +312,7 @@ body{
 
   left:50%;
 
-  bottom:-17vh;
+  bottom:-5vh;
 
   transform:translateX(-50%);
 
@@ -322,7 +322,7 @@ body{
 .countdown-title{
   position:absolute;
 
-  bottom:18vh;
+  bottom:28vh;
 
   left:50%;
 
@@ -342,7 +342,7 @@ body{
 
   position:absolute;
 
-  bottom:3vh;
+  bottom:10vh;
 
   left:50%;
 
@@ -372,4 +372,50 @@ body{
   align-items:center;
 
   color:#fff;
+}
+
+/* HP KECIL */
+@media (max-height:760px){
+
+  .hero-frame{
+    width:96%;
+    top:-10vh;
+  }
+
+  .hero-content{
+    width:84%;
+    padding-top:29vh;
+  }
+
+  .arabic{
+    font-size:20px;
+  }
+
+  .hero-text{
+    font-size:12px;
+    line-height:1.8;
+  }
+
+  .surah{
+    font-size:14px;
+  }
+
+  .hero-love{
+    bottom:-4vh;
+  }
+
+  .countdown-title{
+    bottom:35vh;
+    font-size:1.8rem;
+  }
+
+  .countdown-wrap{
+    bottom:20vh;
+    gap:8px;
+  }
+
+  .countdown-box{
+    width:64px;
+    height:78px;
+  }
 }
